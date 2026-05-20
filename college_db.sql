@@ -35,7 +35,37 @@ INSERT INTO student(first_name,last_name,subject,marks,grade,city) VALUES
 ("Aman","Yadav", "Chemistry", 85, "B", "Pune"),
 ("Akash","Jatav", "Python", 76, "C", "Pune"),
 ("Rakesh","Jatav", "Java", 88, "B", "Delhi"),
-("Priya","Rajput", "Science", 72, "C", "Mumbai");
+("Priya","Rajput", "Science", 72, "C", "Mumbai"),
+('Aarav', 'Sharma', 'Mathematics', 92, 'A', 'Delhi'),
+('Diya', 'Patel', 'Science', 85, 'A', 'Mumbai'),
+('Karan', 'Verma', 'English', 78, 'B', 'Lucknow'),
+('Ananya', 'Iyer', 'Mathematics', 95, 'A', 'Chennai'),
+('Kabir', 'Singh', 'Science', 64, 'C', 'Delhi'),
+('Isha', 'Gupta', 'History', 88, 'A', 'Bangalore'),
+('Rohan', 'Mehta', 'English', 45, 'D', 'Mumbai'),
+('Sanya', 'Rao', 'Mathematics', 72, 'B', 'Hyderabad'),
+('Amit', 'Joshi', 'Science', 55, 'C', 'Pune'),
+('Meera', 'Nair', 'History', 91, 'A', 'Chennai'),
+('Rahul', 'Mishra', 'Science', 81, 'A', 'Delhi'),
+('Sneha', 'Deshmukh', 'Mathematics', 49, 'D', 'Pune'),
+('Arjun', 'Reddy', 'History', 76, 'B', 'Hyderabad'),
+('Pooja', 'Choudhary', 'English', 89, 'A', 'Jaipur'),
+('Aditya', 'Sen', 'Mathematics', 68, 'B', 'Kolkata'),
+('Riya', 'Kapoor', 'Science', 94, 'A', 'Mumbai'),
+('Yash', 'Bansal', 'History', 42, 'E', 'Delhi'),
+('Tanvi', 'Kulkarni', 'English', 73, 'B', 'Pune'),
+('Dev', 'Joshi', 'Mathematics', 85, 'A', 'Ahmedabad'),
+('Kriti', 'Saxena', 'Science', 61, 'C', 'Lucknow'),
+('Vikram', 'Gill', 'History', 58, 'C', 'Chandigarh'),
+('Nehal', 'Shah', 'English', 91, 'A', 'Ahmedabad'),
+('Pranav', 'Pillai', 'Mathematics', 38, 'F', 'Bangalore'),
+('Anjali', 'Sharma', 'Science', 77, 'B', 'Delhi'),
+('Manish', 'Tiwari', 'History', 83, 'A', 'Varanasi'),
+('Shreya', 'Das', 'English', 65, 'C', 'Kolkata'),
+('Rishi', 'Malhotra', 'Mathematics', 79, 'B', 'Mumbai'),
+('Prisha', 'Shetty', 'Science', 87, 'A', 'Bangalore'),
+('Gaurav', 'Yadav', 'History', 52, 'D', 'Gurugram'),
+('Siddharth', 'Jain', 'English', 96, 'A', 'Indore');
 
 -- Select & view all columns
 SELECT * FROM student;
@@ -46,8 +76,8 @@ SELECT first_name, subject, marks FROM student;
 -- Q1. Find all students who belong to 'Delhi'.
 SELECT * FROM student WHERE city='Delhi';
 
--- Q2. Find students who scored more than 80 marks.
-SELECT * FROM student WHERE marks > 80;
+-- Q2. Find students who scored more than 90 marks.
+SELECT * FROM student WHERE marks > 90;
 
 -- Q3. Get the list of students who have 'Maths' or 'Science' as their subject.
 SELECT * FROM student WHERE subject IN ('Maths','Science');
@@ -87,9 +117,6 @@ SELECT * FROM student ORDER BY marks DESC LIMIT 3;
 
 -- Q15. Display 3 students from the table, but skip the first 2 students. 
 SELECT * FROM student LIMIT 3 OFFSET 2;
-
-
-
 
 
 
